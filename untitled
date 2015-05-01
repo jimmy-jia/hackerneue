@@ -35,7 +35,7 @@
 		<img class="scrollup" src="scroll.svg" width="50px"></img>
 
 		<script>
-			loadpage();
+			loadnew();
 			$(document).ready(function() {
 	    	    $('.scrollup').click(function () {
 				    $("html, body").animate({

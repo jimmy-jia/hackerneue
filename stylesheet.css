@@ -5,11 +5,12 @@ body, html{
 }
 
 body{
-	background-color:#f1f1f1;
+	background-color:#ccc;
 }
 *{
 	padding:0;
 	margin:0;
+	font-family:'Lato', sans-serif;
 }
 
 
@@ -20,15 +21,112 @@ body{
 
 
 .nav{
-	min-height:100px;
+	min-height:30px;
 	width:100%;
 	background-color:#00BCD4;
 }
+.nav a{
+	text-decoration:none;
+	color:white;
+	font-family:'Montserrat';
+	transition:color .4s;
+}
+ul > li{
+	list-style:none;
+	display:inline-block;
+	margin-right:-4px;
+	font-size:125%;
+	transition: background-color .4s;
+	padding:3px 10px;
+}
+ul > li:hover{
+	background-color:#009FB9;
+}
+ul > li > a:hover{
+	color:#;
+}
+.nav ul > li:first-child{
+	margin-left:10px;
+	margin-right:40px;
+}
 #postdiv{
-	height:1000px;
-	width:100%;
-	background-color:#ccc;
+	max-width:100%;
+	width:70%;
 }
 .post{
-	background-color:#fff;
+	background-color:#f2f2f2;
+	padding:20px;
+	padding-left:50px;
+	border-bottom:1px solid #aaa;
+	position:relative;
+	transition:background-color .4s;
+	margin:5px;
+	box-shadow:0 0 10px 3px rgba(230, 230, 230, .5);
+}
+.post:hover, .post:focus, .post:active{
+	background-color:white;
+}
+.post a:nth-child(2){
+	font-family:'Open Sans', sans-serif;
+	font-size:125%;
+	transition: all .4s;
+	color:#454545;
+	display:block;
+	text-decoration:none;
+}
+.post a:nth-child(2):hover{
+	color:#0077ff;
+	margin-left:7px;
+}
+.post a:nth-child(5){
+	text-decoration:none;
+	color:#002288;
+	margin-left:10px;
+	transition: color .4s;
+	white-space:nowrap;
+}
+.post a:nth-child(5):hover{
+	color:#0077ff;
+}
+.post p:first-child{
+	position: absolute;
+	left:12px;
+	top:25px;
+}
+.post p:nth-child(3){
+	display:inline-block;
+		font-size:80%;
+} 
+.post p:nth-child(4){
+	margin-left:10px;
+	display:inline-block;
+	font-size:85%;
+}
+
+
+.scrollup{
+	border-radius:50%;
+	position:fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index:10;
+}
+.scrollup:hover{
+	cursor:pointer;
+
+}
+
+@media print, screen and (max-width:960px){
+	#postdiv{
+		width:100%;
+	}
+}
+@media print, screen and (max-width:440px){
+	.nav ul > li:nth-child(2){
+		margin-left:70px;
+	}
+	.nav ul > li:first-child{
+		margin-left:5px;
+		margin-right:55%;
+	}
 }
