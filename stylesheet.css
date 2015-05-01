@@ -1,0 +1,34 @@
+body, html{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+body{
+	background-color:#f1f1f1;
+}
+*{
+	padding:0;
+	margin:0;
+}
+
+
+
+
+
+
+
+
+.nav{
+	min-height:100px;
+	width:100%;
+	background-color:#00BCD4;
+}
+#postdiv{
+	height:1000px;
+	width:100%;
+	background-color:#ccc;
+}
+.post{
+	background-color:#fff;
+}
